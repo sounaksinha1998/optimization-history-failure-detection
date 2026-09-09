@@ -1,0 +1,53 @@
+{
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "epochs": 5,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "variant": "mnist_clean",
+  "train_subset": 10000,
+  "data_dir": "C:\\Users\\Sounak Sinha\\OneDrive\\Desktop\\Research\\optimization-algorithm\\data",
+  "output_dir": "C:\\Users\\Sounak Sinha\\OneDrive\\Desktop\\Research\\optimization-algorithm\\research\\phase0_baseline",
+  "optimizer": "adam",
+  "runs": [
+    {
+      "seed": 42,
+      "optimizer": "adam",
+      "epochs": 5,
+      "batch_size": 128,
+      "learning_rate": 0.001,
+      "n_train": 10000,
+      "test_acc": 0.9253,
+      "test_loss": 0.24586905055188077,
+      "train_time_s": 3.8839196999906562,
+      "final_step": 395
+    },
+    {
+      "seed": 123,
+      "optimizer": "adam",
+      "epochs": 5,
+      "batch_size": 128,
+      "learning_rate": 0.001,
+      "n_train": 10000,
+      "test_acc": 0.9219,
+      "test_loss": 0.2643866626620694,
+      "train_time_s": 2.1540140999713913,
+      "final_step": 395
+    },
+    {
+      "seed": 456,
+      "optimizer": "adam",
+      "epochs": 5,
+      "batch_size": 128,
+      "learning_rate": 0.001,
+      "n_train": 10000,
+      "test_acc": 0.931,
+      "test_loss": 0.23909405332920114,
+      "train_time_s": 2.0925449000205845,
+      "final_step": 395
+    }
+  ]
+}
