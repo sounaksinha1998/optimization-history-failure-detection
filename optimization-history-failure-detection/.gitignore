@@ -59,6 +59,7 @@ data/
 research/**/artifacts/
 research/**/deployment/
 research/**/feature_cache/
+research/**/ht_probe_cache/
 research/**/probe_features/
 research/**/probe_results/
 research/**/checkpoints/
@@ -86,6 +87,15 @@ research/**/cross_dataset/*.json
 *.pt
 *.pth
 *.ckpt
+
+# Paper sources kept local (not versioned)
+publication/main.tex
+publication/ref.bib
+
+# Residual-memory notebooks (use *_correctness.ipynb instead)
+notebooks/dermamnist_full_validation.ipynb
+notebooks/memory_vector_vs_magnitude_probe.ipynb
+notebooks/bloodmnist_organcmnist_probe.ipynb
 
 # LaTeX build artifacts
 *.aux

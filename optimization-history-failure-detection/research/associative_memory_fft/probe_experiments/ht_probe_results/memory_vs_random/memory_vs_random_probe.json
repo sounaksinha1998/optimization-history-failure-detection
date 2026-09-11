@@ -1,0 +1,329 @@
+[
+  {
+    "task": "dermamnist",
+    "num_classes": 7,
+    "num_levels": 4,
+    "R_scaling": "frobenius_matched_per_level",
+    "feature_selection": "same as z_combined (cal AUROC: magnitude vs full_vector on M)",
+    "mean_test_auroc": {
+      "M": 0.734351973530709,
+      "R": 0.7270783376008744
+    },
+    "std_test_auroc": {
+      "M": 0.002395248681041007,
+      "R": 0.017422057347340193
+    },
+    "mean_test_auprc": {
+      "M": 0.5863351901205677,
+      "R": 0.5717704649996398
+    },
+    "std_test_auprc": {
+      "M": 0.008979768752028761,
+      "R": 0.008875124496549982
+    },
+    "delta_M_minus_R": {
+      "auroc_mean": 0.007273635929834728,
+      "auroc_std": 0.019705170931933726,
+      "auprc_mean": 0.014564725120927805,
+      "auprc_std": 0.0178520095272862
+    },
+    "bootstrap_ci_auroc_delta_per_seed": {
+      "delta_mean": 0.007273635929834728,
+      "ci_low": -0.013554522916017442,
+      "ci_high": 0.03372147634337219
+    },
+    "bootstrap_ci_auprc_delta_per_seed": {
+      "delta_mean": 0.014564725120927805,
+      "ci_low": -0.006356313607908226,
+      "ci_high": 0.03726346208936737
+    },
+    "bootstrap_ci_auroc_delta_pooled_test": {
+      "delta_mean": 0.00683524010975732,
+      "ci_low": -0.0052537668587849164,
+      "ci_high": 0.01934409593555197
+    },
+    "scale_check": {
+      "max_frobenius_rel_diff_mean": 1.3478523484929085e-16,
+      "response_mag_ratio_M_over_R_mean": 4.5151573531331435,
+      "response_mag_ratio_M_over_R_std": 0.892887342174275
+    },
+    "verdict": "M ~ R: memory-specific benefit is not established",
+    "per_seed": [
+      {
+        "seed": 42,
+        "n_cal": 1602,
+        "n_test": 2000,
+        "feature_cols": 32,
+        "max_abs_mag_diff_cache_vs_Mk": 5.744722229167332e-09,
+        "auroc_M": 0.7346402395242031,
+        "auprc_M": 0.5852147953274826,
+        "auroc_R": 0.7329862851620537,
+        "auprc_R": 0.5724277684461583,
+        "delta_auroc_M_minus_R": 0.0016539543621494346,
+        "delta_auprc_M_minus_R": 0.01278702688132427,
+        "scale_max_frobenius_rel_diff": 1.5004034457491844e-16,
+        "scale_mean_response_mag_M": 0.010738952948825329,
+        "scale_mean_response_mag_R": 0.0019046812510933025,
+        "scale_response_mag_ratio_M_over_R": 5.638189034003927,
+        "scale_response_mag_std_M": 0.009111351248096068,
+        "scale_response_mag_std_R": 0.0018014883129481192
+      },
+      {
+        "seed": 123,
+        "n_cal": 1602,
+        "n_test": 2000,
+        "feature_cols": 32,
+        "max_abs_mag_diff_cache_vs_Mk": 4.294279376537702e-09,
+        "auroc_M": 0.7312849136782591,
+        "auprc_M": 0.5759403472665867,
+        "auroc_R": 0.7448394365942765,
+        "auprc_R": 0.5822966608744949,
+        "delta_auroc_M_minus_R": -0.013554522916017442,
+        "delta_auprc_M_minus_R": -0.006356313607908226,
+        "scale_max_frobenius_rel_diff": 1.4215868938380669e-16,
+        "scale_mean_response_mag_M": 0.0069003249562956444,
+        "scale_mean_response_mag_R": 0.0019986323048725198,
+        "scale_response_mag_ratio_M_over_R": 3.452523476189508,
+        "scale_response_mag_std_M": 0.006707467162625902,
+        "scale_response_mag_std_R": 0.0022342567620818616
+      },
+      {
+        "seed": 456,
+        "n_cal": 1602,
+        "n_test": 2000,
+        "feature_cols": 32,
+        "max_abs_mag_diff_cache_vs_Mk": 5.668680209264254e-09,
+        "auroc_M": 0.7371307673896649,
+        "auprc_M": 0.5978504277676336,
+        "auroc_R": 0.7034092910462927,
+        "auprc_R": 0.5605869656782663,
+        "delta_auroc_M_minus_R": 0.03372147634337219,
+        "delta_auprc_M_minus_R": 0.03726346208936737,
+        "scale_max_frobenius_rel_diff": 1.121566705891474e-16,
+        "scale_mean_response_mag_M": 0.008724328949322107,
+        "scale_mean_response_mag_R": 0.001956111249747666,
+        "scale_response_mag_ratio_M_over_R": 4.46003720186543,
+        "scale_response_mag_std_M": 0.008792282402361221,
+        "scale_response_mag_std_R": 0.0023995812532239913
+      }
+    ]
+  },
+  {
+    "task": "bloodmnist",
+    "num_classes": 8,
+    "num_levels": 4,
+    "R_scaling": "frobenius_matched_per_level",
+    "feature_selection": "same as z_combined (cal AUROC: magnitude vs full_vector on M)",
+    "mean_test_auroc": {
+      "M": 0.8862963148800903,
+      "R": 0.8513691869539155
+    },
+    "std_test_auroc": {
+      "M": 0.037180890246268215,
+      "R": 0.05828990842581856
+    },
+    "mean_test_auprc": {
+      "M": 0.9450441306386036,
+      "R": 0.9349079580871682
+    },
+    "std_test_auprc": {
+      "M": 0.030234642059950145,
+      "R": 0.035005442838691364
+    },
+    "delta_M_minus_R": {
+      "auroc_mean": 0.034927127926174695,
+      "auroc_std": 0.021319068158092036,
+      "auprc_mean": 0.010136172551435433,
+      "auprc_std": 0.006380032827933358
+    },
+    "bootstrap_ci_auroc_delta_per_seed": {
+      "delta_mean": 0.034927127926174695,
+      "ci_low": 0.006655277600170595,
+      "ci_high": 0.05813393287297264
+    },
+    "bootstrap_ci_auprc_delta_per_seed": {
+      "delta_mean": 0.010136172551435433,
+      "ci_low": 0.001529453479864662,
+      "ci_high": 0.016784850497491788
+    },
+    "bootstrap_ci_auroc_delta_pooled_test": {
+      "delta_mean": 0.029514413878258934,
+      "ci_low": 0.020142256324299966,
+      "ci_high": 0.038081023146912224
+    },
+    "scale_check": {
+      "max_frobenius_rel_diff_mean": 1.5936771455730416e-16,
+      "response_mag_ratio_M_over_R_mean": 2.6978073201358685,
+      "response_mag_ratio_M_over_R_std": 1.1474397608878153
+    },
+    "verdict": "M > R: evidence supporting learned history-based construction",
+    "per_seed": [
+      {
+        "seed": 42,
+        "n_cal": 1602,
+        "n_test": 2000,
+        "feature_cols": 36,
+        "max_abs_mag_diff_cache_vs_Mk": 3.4263736535533607e-09,
+        "auroc_M": 0.938041147165388,
+        "auprc_M": 0.9827954685030987,
+        "auroc_R": 0.9313858695652174,
+        "auprc_R": 0.9812660150232341,
+        "delta_auroc_M_minus_R": 0.006655277600170595,
+        "delta_auprc_M_minus_R": 0.001529453479864662,
+        "scale_max_frobenius_rel_diff": 1.253090002425158e-16,
+        "scale_mean_response_mag_M": 0.00740447556010473,
+        "scale_mean_response_mag_R": 0.0017277818150619449,
+        "scale_response_mag_ratio_M_over_R": 4.285538539224482,
+        "scale_response_mag_std_M": 0.006470944966968222,
+        "scale_response_mag_std_R": 0.0020906002033070897
+      },
+      {
+        "seed": 123,
+        "n_cal": 1602,
+        "n_test": 2000,
+        "feature_cols": 36,
+        "max_abs_mag_diff_cache_vs_Mk": 1.377021973877901e-09,
+        "auroc_M": 0.8523317946796347,
+        "auprc_M": 0.9435560359425891,
+        "auroc_R": 0.7941978618066621,
+        "auprc_R": 0.9267711854450973,
+        "delta_auroc_M_minus_R": 0.05813393287297264,
+        "delta_auprc_M_minus_R": 0.016784850497491788,
+        "scale_max_frobenius_rel_diff": 1.5572365564886413e-16,
+        "scale_mean_response_mag_M": 0.0023752782400393527,
+        "scale_mean_response_mag_R": 0.0014790304177651579,
+        "scale_response_mag_ratio_M_over_R": 1.6059698366599329,
+        "scale_response_mag_std_M": 0.0015354450465895465,
+        "scale_response_mag_std_R": 0.0015570957911383541
+      },
+      {
+        "seed": 456,
+        "n_cal": 1602,
+        "n_test": 2000,
+        "feature_cols": 36,
+        "max_abs_mag_diff_cache_vs_Mk": 1.5525708661409676e-09,
+        "auroc_M": 0.8685160027952481,
+        "auprc_M": 0.9087808874701231,
+        "auroc_R": 0.8285238294898672,
+        "auprc_R": 0.8966866737931732,
+        "delta_auroc_M_minus_R": 0.03999217330538085,
+        "delta_auprc_M_minus_R": 0.01209421367694985,
+        "scale_max_frobenius_rel_diff": 1.970704877805325e-16,
+        "scale_mean_response_mag_M": 0.003625866439804717,
+        "scale_mean_response_mag_R": 0.0016425176923358183,
+        "scale_response_mag_ratio_M_over_R": 2.207505255204211,
+        "scale_response_mag_std_M": 0.0020480000755051233,
+        "scale_response_mag_std_R": 0.0016755587518029508
+      }
+    ]
+  },
+  {
+    "task": "organcmnist",
+    "num_classes": 11,
+    "num_levels": 4,
+    "R_scaling": "frobenius_matched_per_level",
+    "feature_selection": "same as z_combined (cal AUROC: magnitude vs full_vector on M)",
+    "mean_test_auroc": {
+      "M": 0.8784272260575898,
+      "R": 0.8593394804752181
+    },
+    "std_test_auroc": {
+      "M": 0.031874331006876394,
+      "R": 0.045748965515323675
+    },
+    "mean_test_auprc": {
+      "M": 0.9413508580779574,
+      "R": 0.9391288477624068
+    },
+    "std_test_auprc": {
+      "M": 0.020048842713242677,
+      "R": 0.026787373917242587
+    },
+    "delta_M_minus_R": {
+      "auroc_mean": 0.019087745582371734,
+      "auroc_std": 0.0187034505456474,
+      "auprc_mean": 0.002222010315550508,
+      "auprc_std": 0.009557820722617362
+    },
+    "bootstrap_ci_auroc_delta_per_seed": {
+      "delta_mean": 0.019087745582371734,
+      "ci_low": -0.005727993324989744,
+      "ci_high": 0.03942422905941534
+    },
+    "bootstrap_ci_auprc_delta_per_seed": {
+      "delta_mean": 0.002222010315550508,
+      "ci_low": -0.010471593411610414,
+      "ci_high": 0.012591525661582281
+    },
+    "bootstrap_ci_auroc_delta_pooled_test": {
+      "delta_mean": 0.018394040231938885,
+      "ci_low": 0.009325275925681992,
+      "ci_high": 0.02806032182351696
+    },
+    "scale_check": {
+      "max_frobenius_rel_diff_mean": 2.270892562426344e-16,
+      "response_mag_ratio_M_over_R_mean": 2.470397510880913,
+      "response_mag_ratio_M_over_R_std": 0.18715243382286512
+    },
+    "verdict": "M ~ R (weak positive trend): memory-specific benefit is not established",
+    "per_seed": [
+      {
+        "seed": 42,
+        "n_cal": 1602,
+        "n_test": 2000,
+        "feature_cols": 48,
+        "max_abs_mag_diff_cache_vs_Mk": 1.4385566115063253e-09,
+        "auroc_M": 0.8918550966485884,
+        "auprc_M": 0.949029965686337,
+        "auroc_R": 0.8975830899735782,
+        "auprc_R": 0.9595015590979474,
+        "delta_auroc_M_minus_R": -0.005727993324989744,
+        "delta_auprc_M_minus_R": -0.010471593411610414,
+        "scale_max_frobenius_rel_diff": 2.242834723741929e-16,
+        "scale_mean_response_mag_M": 0.0033723313163659717,
+        "scale_mean_response_mag_R": 0.0012479640447855549,
+        "scale_response_mag_ratio_M_over_R": 2.7022664056344614,
+        "scale_response_mag_std_M": 0.002095948037327801,
+        "scale_response_mag_std_R": 0.0014410649019672697
+      },
+      {
+        "seed": 123,
+        "n_cal": 1602,
+        "n_test": 2000,
+        "feature_cols": 48,
+        "max_abs_mag_diff_cache_vs_Mk": 9.266562625738495e-10,
+        "auroc_M": 0.9089789409542908,
+        "auprc_M": 0.9611483011423358,
+        "auroc_R": 0.8854119399416012,
+        "auprc_R": 0.9566022024456562,
+        "delta_auroc_M_minus_R": 0.023567001012689603,
+        "delta_auprc_M_minus_R": 0.004546098696679657,
+        "scale_max_frobenius_rel_diff": 1.969547129936482e-16,
+        "scale_mean_response_mag_M": 0.002532559237334361,
+        "scale_mean_response_mag_R": 0.0011298875665892174,
+        "scale_response_mag_ratio_M_over_R": 2.2414258816370127,
+        "scale_response_mag_std_M": 0.0014209222972902788,
+        "scale_response_mag_std_R": 0.0014141825853023421
+      },
+      {
+        "seed": 456,
+        "n_cal": 1602,
+        "n_test": 2000,
+        "feature_cols": 48,
+        "max_abs_mag_diff_cache_vs_Mk": 1.3795074561839815e-09,
+        "auroc_M": 0.8344476405698904,
+        "auprc_M": 0.9138743074051991,
+        "auroc_R": 0.7950234115104751,
+        "auprc_R": 0.9012827817436169,
+        "delta_auroc_M_minus_R": 0.03942422905941534,
+        "delta_auprc_M_minus_R": 0.012591525661582281,
+        "scale_max_frobenius_rel_diff": 2.6002958336006214e-16,
+        "scale_mean_response_mag_M": 0.0026770620949876423,
+        "scale_mean_response_mag_R": 0.0010812367154447488,
+        "scale_response_mag_ratio_M_over_R": 2.475925996843856,
+        "scale_response_mag_std_M": 0.001478289901781251,
+        "scale_response_mag_std_R": 0.00121910193939954
+      }
+    ]
+  }
+]

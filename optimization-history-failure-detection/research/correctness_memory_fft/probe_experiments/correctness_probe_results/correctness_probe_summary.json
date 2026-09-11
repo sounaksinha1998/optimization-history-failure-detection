@@ -1,0 +1,295 @@
+{
+  "memory_kind": "correctness_hd",
+  "test_sample_size": 2000,
+  "z_dim": 7,
+  "z_combined_dim": 28,
+  "z_combined_cols": [
+    "z1_d0",
+    "z1_d1",
+    "z1_d2",
+    "z1_d3",
+    "z1_d4",
+    "z1_d5",
+    "z1_d6",
+    "z2_d0",
+    "z2_d1",
+    "z2_d2",
+    "z2_d3",
+    "z2_d4",
+    "z2_d5",
+    "z2_d6",
+    "z3_d0",
+    "z3_d1",
+    "z3_d2",
+    "z3_d3",
+    "z3_d4",
+    "z3_d5",
+    "z3_d6",
+    "z4_d0",
+    "z4_d1",
+    "z4_d2",
+    "z4_d3",
+    "z4_d4",
+    "z4_d5",
+    "z4_d6"
+  ],
+  "phase3_summary": {
+    "mean_auroc_z_combined": 0.753084370865114,
+    "mean_auroc_H": 0.664465910100148,
+    "mean_auroc_h_T_probe": NaN,
+    "mean_delta_z_minus_H": 0.08861846076496604,
+    "mean_delta_z_minus_h_T": NaN,
+    "mean_delta_h_T_minus_H": NaN,
+    "bootstrap_delta_z_minus_H_per_seed": {
+      "delta_mean": 0.08861846076496609,
+      "ci_low": 0.06466114821689051,
+      "ci_high": 0.11410027140657242
+    },
+    "bootstrap_delta_z_minus_H_pooled": {
+      "delta_mean": 0.19788802011839124,
+      "ci_low": 0.18042350417765138,
+      "ci_high": 0.21610622074547395
+    }
+  },
+  "phase1_per_seed": [
+    {
+      "seed": 42,
+      "representation": "z_combined",
+      "cal_auroc": 0.7887765870296345,
+      "test_auroc": 0.764773820329752,
+      "test_auprc": 0.6271536807729613
+    },
+    {
+      "seed": 123,
+      "representation": "z_combined",
+      "cal_auroc": 0.7823109596787975,
+      "test_auroc": 0.7500767705779019,
+      "test_auprc": 0.6097990963841337
+    },
+    {
+      "seed": 456,
+      "representation": "z_combined",
+      "cal_auroc": 0.7657399267463801,
+      "test_auroc": 0.7444025216876882,
+      "test_auprc": 0.581458252452844
+    }
+  ],
+  "phase3_per_seed": [
+    {
+      "seed": 42,
+      "model": "entropy_H",
+      "auroc": 0.6506735489231796,
+      "auprc": 0.49605275216182354
+    },
+    {
+      "seed": 42,
+      "model": "z_combined",
+      "auroc": 0.764773820329752,
+      "auprc": 0.6271536807729613
+    },
+    {
+      "seed": 123,
+      "model": "entropy_H",
+      "auroc": 0.6854156223610114,
+      "auprc": 0.5202684537980244
+    },
+    {
+      "seed": 123,
+      "model": "z_combined",
+      "auroc": 0.7500767705779019,
+      "auprc": 0.6097990963841337
+    },
+    {
+      "seed": 456,
+      "model": "entropy_H",
+      "auroc": 0.6573085590162528,
+      "auprc": 0.4743616487320643
+    },
+    {
+      "seed": 456,
+      "model": "z_combined",
+      "auroc": 0.7444025216876882,
+      "auprc": 0.581458252452844
+    }
+  ],
+  "level_per_seed": [
+    {
+      "seed": 42,
+      "level": 1,
+      "auroc": 0.7426842155175917,
+      "auprc": 0.5680687618681248,
+      "n_features": 7
+    },
+    {
+      "seed": 42,
+      "level": 2,
+      "auroc": 0.7492401970745892,
+      "auprc": 0.5677229175598008,
+      "n_features": 7
+    },
+    {
+      "seed": 42,
+      "level": 3,
+      "auroc": 0.7330833773635177,
+      "auprc": 0.5349378915750835,
+      "n_features": 7
+    },
+    {
+      "seed": 42,
+      "level": 4,
+      "auroc": 0.7442851078626619,
+      "auprc": 0.563719265958375,
+      "n_features": 7
+    },
+    {
+      "seed": 123,
+      "level": 1,
+      "auroc": 0.7208734685398688,
+      "auprc": 0.5483595607754405,
+      "n_features": 7
+    },
+    {
+      "seed": 123,
+      "level": 2,
+      "auroc": 0.6905095760006141,
+      "auprc": 0.5062878022813662,
+      "n_features": 7
+    },
+    {
+      "seed": 123,
+      "level": 3,
+      "auroc": 0.6708901774303532,
+      "auprc": 0.46863211778475244,
+      "n_features": 7
+    },
+    {
+      "seed": 123,
+      "level": 4,
+      "auroc": 0.6730679780887739,
+      "auprc": 0.48135531712608837,
+      "n_features": 7
+    },
+    {
+      "seed": 456,
+      "level": 1,
+      "auroc": 0.7208441150836121,
+      "auprc": 0.5441619476822692,
+      "n_features": 7
+    },
+    {
+      "seed": 456,
+      "level": 2,
+      "auroc": 0.7119974349595148,
+      "auprc": 0.5442921015626998,
+      "n_features": 7
+    },
+    {
+      "seed": 456,
+      "level": 3,
+      "auroc": 0.6901291100483655,
+      "auprc": 0.5228986461346758,
+      "n_features": 7
+    },
+    {
+      "seed": 456,
+      "level": 4,
+      "auroc": 0.692864626375661,
+      "auprc": 0.5203590694243366,
+      "n_features": 7
+    }
+  ],
+  "ablation_per_seed": [
+    {
+      "seed": 42,
+      "levels": "z1..z1",
+      "max_level": 1,
+      "auroc": 0.7426842155175917,
+      "auprc": 0.5680687618681248
+    },
+    {
+      "seed": 42,
+      "levels": "z1..z2",
+      "max_level": 2,
+      "auroc": 0.7645717330732166,
+      "auprc": 0.6232338032425058
+    },
+    {
+      "seed": 42,
+      "levels": "z1..z3",
+      "max_level": 3,
+      "auroc": 0.7647399509571485,
+      "auprc": 0.6258292620258294
+    },
+    {
+      "seed": 42,
+      "levels": "z1..z4",
+      "max_level": 4,
+      "auroc": 0.764773820329752,
+      "auprc": 0.6271536807729613
+    },
+    {
+      "seed": 123,
+      "levels": "z1..z1",
+      "max_level": 1,
+      "auroc": 0.7208734685398688,
+      "auprc": 0.5483595607754405
+    },
+    {
+      "seed": 123,
+      "levels": "z1..z2",
+      "max_level": 2,
+      "auroc": 0.7500587069125131,
+      "auprc": 0.6098266437270342
+    },
+    {
+      "seed": 123,
+      "levels": "z1..z3",
+      "max_level": 3,
+      "auroc": 0.7500304824353434,
+      "auprc": 0.6098030332337517
+    },
+    {
+      "seed": 123,
+      "levels": "z1..z4",
+      "max_level": 4,
+      "auroc": 0.7500767705779019,
+      "auprc": 0.6097990963841337
+    },
+    {
+      "seed": 456,
+      "levels": "z1..z1",
+      "max_level": 1,
+      "auroc": 0.7208441150836121,
+      "auprc": 0.5441619476822692
+    },
+    {
+      "seed": 456,
+      "levels": "z1..z2",
+      "max_level": 2,
+      "auroc": 0.7445154195963674,
+      "auprc": 0.5803417718953412
+    },
+    {
+      "seed": 456,
+      "levels": "z1..z3",
+      "max_level": 3,
+      "auroc": 0.7439531880111453,
+      "auprc": 0.5804018385821996
+    },
+    {
+      "seed": 456,
+      "levels": "z1..z4",
+      "max_level": 4,
+      "auroc": 0.7444025216876882,
+      "auprc": 0.581458252452844
+    }
+  ],
+  "mean_auroc_memory_combined": 0.753084370865114,
+  "mean_auroc_H": 0.664465910100148,
+  "mean_delta_auroc": 0.08861846076496604,
+  "bootstrap_delta_per_seed": {
+    "delta_mean": 0.08861846076496609,
+    "ci_low": 0.06466114821689051,
+    "ci_high": 0.11410027140657242
+  }
+}

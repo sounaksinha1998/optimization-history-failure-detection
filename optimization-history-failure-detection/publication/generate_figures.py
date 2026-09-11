@@ -1,6 +1,11 @@
-"""Generate publication figures (reconstruction + probe analysis)."""
+"""Generate publication figures.
 
-from research.associative_memory_fft.probe_experiments.probe_analysis import run_analysis
+Correctness-memory probe plots (3--7): publication/generate_correctness_figures.py
+Legacy residual-memory pipeline: research/associative_memory_fft/probe_experiments/probe_analysis.py
+"""
 
 if __name__ == "__main__":
-    run_analysis()
+    import runpy
+    from pathlib import Path
+
+    runpy.run_path(Path(__file__).with_name("generate_correctness_figures.py"), run_name="__main__")

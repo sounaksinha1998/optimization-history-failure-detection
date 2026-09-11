@@ -1,0 +1,185 @@
+{
+  "seed_mean": {
+    "H_auroc": 0.6646646307872054,
+    "z_auroc": 0.7533562491985651,
+    "H_auprc": 0.49790551211923884,
+    "z_auprc": 0.6073357589360162
+  },
+  "pooled_metrics": {
+    "H_auroc": 0.5552116044878594,
+    "H_auprc": 0.39326909501385504,
+    "z_auroc": 0.7534792142121984,
+    "z_auprc": 0.6078813278710625
+  },
+  "phase3_per_seed": [
+    {
+      "seed": 42,
+      "model": "entropy_H",
+      "auroc": 0.6514934608559493,
+      "auprc": 0.49832942810980174
+    },
+    {
+      "seed": 42,
+      "model": "z_combined",
+      "auroc": 0.7652812232424182,
+      "auprc": 0.6287309688648124
+    },
+    {
+      "seed": 123,
+      "model": "entropy_H",
+      "auroc": 0.6858943335691103,
+      "auprc": 0.5214637491875569
+    },
+    {
+      "seed": 123,
+      "model": "z_combined",
+      "auroc": 0.7504035847121772,
+      "auprc": 0.6111989073196039
+    },
+    {
+      "seed": 456,
+      "model": "entropy_H",
+      "auroc": 0.6566060979365568,
+      "auprc": 0.4739233590603579
+    },
+    {
+      "seed": 456,
+      "model": "z_combined",
+      "auroc": 0.7443839396411001,
+      "auprc": 0.5820774006236324
+    }
+  ],
+  "selective_risk": [
+    {
+      "seed": 42,
+      "scorer": "H",
+      "deferral": 0.2,
+      "selective_risk": 0.280625
+    },
+    {
+      "seed": 42,
+      "scorer": "z_combined",
+      "deferral": 0.2,
+      "selective_risk": 0.254375
+    },
+    {
+      "seed": 42,
+      "scorer": "H",
+      "deferral": 0.1,
+      "selective_risk": 0.29944444444444446
+    },
+    {
+      "seed": 42,
+      "scorer": "z_combined",
+      "deferral": 0.1,
+      "selective_risk": 0.2816666666666667
+    },
+    {
+      "seed": 42,
+      "scorer": "H",
+      "deferral": 0.05,
+      "selective_risk": 0.31526315789473686
+    },
+    {
+      "seed": 42,
+      "scorer": "z_combined",
+      "deferral": 0.05,
+      "selective_risk": 0.3031578947368421
+    },
+    {
+      "seed": 123,
+      "scorer": "H",
+      "deferral": 0.2,
+      "selective_risk": 0.274375
+    },
+    {
+      "seed": 123,
+      "scorer": "z_combined",
+      "deferral": 0.2,
+      "selective_risk": 0.25375
+    },
+    {
+      "seed": 123,
+      "scorer": "H",
+      "deferral": 0.1,
+      "selective_risk": 0.3005555555555556
+    },
+    {
+      "seed": 123,
+      "scorer": "z_combined",
+      "deferral": 0.1,
+      "selective_risk": 0.28555555555555556
+    },
+    {
+      "seed": 123,
+      "scorer": "H",
+      "deferral": 0.05,
+      "selective_risk": 0.3157894736842105
+    },
+    {
+      "seed": 123,
+      "scorer": "z_combined",
+      "deferral": 0.05,
+      "selective_risk": 0.30842105263157893
+    },
+    {
+      "seed": 456,
+      "scorer": "H",
+      "deferral": 0.2,
+      "selective_risk": 0.28625
+    },
+    {
+      "seed": 456,
+      "scorer": "z_combined",
+      "deferral": 0.2,
+      "selective_risk": 0.25875
+    },
+    {
+      "seed": 456,
+      "scorer": "H",
+      "deferral": 0.1,
+      "selective_risk": 0.30444444444444446
+    },
+    {
+      "seed": 456,
+      "scorer": "z_combined",
+      "deferral": 0.1,
+      "selective_risk": 0.2927777777777778
+    },
+    {
+      "seed": 456,
+      "scorer": "H",
+      "deferral": 0.05,
+      "selective_risk": 0.32052631578947366
+    },
+    {
+      "seed": 456,
+      "scorer": "z_combined",
+      "deferral": 0.05,
+      "selective_risk": 0.3094736842105263
+    }
+  ],
+  "confident_wrong": [
+    {
+      "seed": 42,
+      "scorer": "z_combined",
+      "p_error_score_low": 0.1,
+      "p_error_score_high": 0.32,
+      "auroc_given_low_h": 0.7152260397830018
+    },
+    {
+      "seed": 123,
+      "scorer": "z_combined",
+      "p_error_score_low": 0.112,
+      "p_error_score_high": 0.22,
+      "auroc_given_low_h": 0.6360116725896392
+    },
+    {
+      "seed": 456,
+      "scorer": "z_combined",
+      "p_error_score_low": 0.072,
+      "p_error_score_high": 0.276,
+      "auroc_given_low_h": 0.7218001168907071
+    }
+  ]
+}

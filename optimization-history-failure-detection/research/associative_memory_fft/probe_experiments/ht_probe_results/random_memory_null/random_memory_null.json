@@ -1,0 +1,131 @@
+[
+  {
+    "task": "dermamnist",
+    "num_random_R": 50,
+    "match_frobenius": false,
+    "mean_auroc": {
+      "M_k_cached_mag": 0.5249425349644823,
+      "M_k_recomputed_mag": 0.524940653332671,
+      "R_k_mag": 0.5039605339017367
+    },
+    "delta_Mk_minus_Rk": 0.020980119430934363,
+    "per_seed": [
+      {
+        "task": "dermamnist",
+        "seed": 42,
+        "n_test": 2000,
+        "max_abs_mag_diff_cache_vs_Mk": 6.182490953215991e-09,
+        "auroc_Mk_cached_mag": 0.6326448818862079,
+        "auroc_Mk_recomputed_mag": 0.6326426239280343,
+        "auroc_Rk_mag_mean": 0.5012062012563279,
+        "auroc_Rk_mag_std": 0.06262054862378634
+      },
+      {
+        "task": "dermamnist",
+        "seed": 123,
+        "n_test": 2000,
+        "max_abs_mag_diff_cache_vs_Mk": 4.09157128317128e-09,
+        "auroc_Mk_cached_mag": 0.3725997904614815,
+        "auroc_Mk_recomputed_mag": 0.37259922597193806,
+        "auroc_Rk_mag_mean": 0.5120740474803445,
+        "auroc_Rk_mag_std": 0.07599608938456702
+      },
+      {
+        "task": "dermamnist",
+        "seed": 456,
+        "n_test": 2000,
+        "max_abs_mag_diff_cache_vs_Mk": 5.195408516595057e-09,
+        "auroc_Mk_cached_mag": 0.5695829325457575,
+        "auroc_Mk_recomputed_mag": 0.5695801100980405,
+        "auroc_Rk_mag_mean": 0.49860135296853764,
+        "auroc_Rk_mag_std": 0.05601171517682008
+      }
+    ]
+  },
+  {
+    "task": "bloodmnist",
+    "num_random_R": 50,
+    "match_frobenius": false,
+    "mean_auroc": {
+      "M_k_cached_mag": 0.45196582432988563,
+      "M_k_recomputed_mag": 0.45196660811469175,
+      "R_k_mag": 0.48953566848317936
+    },
+    "delta_Mk_minus_Rk": -0.03756906036848762,
+    "per_seed": [
+      {
+        "task": "bloodmnist",
+        "seed": 42,
+        "n_test": 2000,
+        "max_abs_mag_diff_cache_vs_Mk": 4.616535938251065e-09,
+        "auroc_Mk_cached_mag": 0.3578847639599318,
+        "auroc_Mk_recomputed_mag": 0.357886429028133,
+        "auroc_Rk_mag_mean": 0.4969203231564364,
+        "auroc_Rk_mag_std": 0.09926988001234473
+      },
+      {
+        "task": "bloodmnist",
+        "seed": 123,
+        "n_test": 2000,
+        "max_abs_mag_diff_cache_vs_Mk": 1.418807940925526e-09,
+        "auroc_Mk_cached_mag": 0.4494989424329396,
+        "auroc_Mk_recomputed_mag": 0.4494996287191566,
+        "auroc_Rk_mag_mean": 0.49100687796046716,
+        "auroc_Rk_mag_std": 0.07440521094653962
+      },
+      {
+        "task": "bloodmnist",
+        "seed": 456,
+        "n_test": 2000,
+        "max_abs_mag_diff_cache_vs_Mk": 1.5027056135888395e-09,
+        "auroc_Mk_cached_mag": 0.5485137665967855,
+        "auroc_Mk_recomputed_mag": 0.5485137665967855,
+        "auroc_Rk_mag_mean": 0.4806798043326345,
+        "auroc_Rk_mag_std": 0.0866929070265579
+      }
+    ]
+  },
+  {
+    "task": "organcmnist",
+    "num_random_R": 50,
+    "match_frobenius": false,
+    "mean_auroc": {
+      "M_k_cached_mag": 0.4438037182979264,
+      "M_k_recomputed_mag": 0.44380419847317115,
+      "R_k_mag": 0.493550421631934
+    },
+    "delta_Mk_minus_Rk": -0.04974622315876287,
+    "per_seed": [
+      {
+        "task": "organcmnist",
+        "seed": 42,
+        "n_test": 2000,
+        "max_abs_mag_diff_cache_vs_Mk": 1.5270835776459712e-09,
+        "auroc_Mk_cached_mag": 0.3189097482964817,
+        "auroc_Mk_recomputed_mag": 0.3189097482964817,
+        "auroc_Rk_mag_mean": 0.4953766652760395,
+        "auroc_Rk_mag_std": 0.10334708542351104
+      },
+      {
+        "task": "organcmnist",
+        "seed": 123,
+        "n_test": 2000,
+        "max_abs_mag_diff_cache_vs_Mk": 1.3175660410792711e-09,
+        "auroc_Mk_cached_mag": 0.42664770934800367,
+        "auroc_Mk_recomputed_mag": 0.42664914987373787,
+        "auroc_Rk_mag_mean": 0.4868104311349471,
+        "auroc_Rk_mag_std": 0.09124436971395401
+      },
+      {
+        "task": "organcmnist",
+        "seed": 456,
+        "n_test": 2000,
+        "max_abs_mag_diff_cache_vs_Mk": 1.1328835343785149e-09,
+        "auroc_Mk_cached_mag": 0.5858536972492938,
+        "auroc_Mk_recomputed_mag": 0.5858536972492939,
+        "auroc_Rk_mag_mean": 0.4984641684848154,
+        "auroc_Rk_mag_std": 0.06276596682895197
+      }
+    ]
+  }
+]

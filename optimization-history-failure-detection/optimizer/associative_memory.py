@@ -58,6 +58,7 @@ class AssociativeMemoryConfig:
     use_attention: bool = False
     trajectory_sample_every: int = 1
     num_levels: int = 4
+    correctness_z_dim: int = 7
     update_every: tuple[int, ...] = DEFAULT_UPDATE_EVERY
     learning_rates: tuple[float, ...] = DEFAULT_LEARNING_RATES
     eps: float = 1e-8
@@ -78,6 +79,8 @@ class AssociativeMemoryConfig:
             raise ValueError(
                 f"trajectory_sample_every must be positive, got {self.trajectory_sample_every}"
             )
+        if self.correctness_z_dim <= 0:
+            raise ValueError(f"correctness_z_dim must be positive, got {self.correctness_z_dim}")
 
 
 class AssociativeMemoryState(NamedTuple):
